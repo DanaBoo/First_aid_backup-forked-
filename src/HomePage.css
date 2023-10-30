@@ -1,0 +1,170 @@
+/* HomePage.css */
+
+/* Add a background to the entire page */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+}
+
+/* Style the Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f44336;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  z-index: 100; /* Ensure it's above other content */
+}
+
+/* Style the Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1);
+}
+
+.logo h2 {
+  font-size: 29px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Style the Navigation Menu */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ce291d;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu ul li a:hover {
+  background-color: #af1d12;
+  transform: scale(1.1);
+}
+
+/* Style the Welcome Section */
+.welcome {
+  margin-top: 100px; /* Adjust the margin */
+  color: #333;
+  padding: 20px;
+  text-align: center;
+ ;
+}
+
+.welcome h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.welcome h1:hover {
+  transform: scale(1.1);
+}
+
+/* Style the Project Info Section */
+.project-info {
+  margin-top: 20px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.project-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Style the Learn First Aid Section */
+.additional-content {
+  margin-top: 20px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.additional-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.additional-content p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Style the Join Community Section */
+.more-content {
+  margin-top: 20px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.more-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.more-content p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
