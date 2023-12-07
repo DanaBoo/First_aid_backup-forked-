@@ -1,21 +1,23 @@
 /* HomePage.css */
 
-/* Add a background to the entire page */
 body {
   background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
   margin: 0; /* Remove default margin */
 }
 
-/* Style the Header */
+/* Header styles */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #f44336;
+  background-color: #e3002b;
   color: #fff;
-  padding: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,17 +25,17 @@ body {
   z-index: 100; /* Ensure it's above other content */
 }
 
-/* Style the Logo */
+/* Logo styles */
 .logo {
   display: flex;
   align-items: center;
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
   height: auto;
   margin-right: 10px;
-  transform: scale(1);
+  transform: scale(0.8);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -48,7 +50,7 @@ body {
   color: #fff;
 }
 
-/* Style the Navigation Menu */
+/* Menu styles */
 .menu ul {
   list-style-type: none;
   padding: 0;
@@ -59,7 +61,7 @@ body {
 }
 
 .menu ul li {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menu ul li:last-child {
@@ -69,102 +71,252 @@ body {
 .menu ul li a {
   text-decoration: none;
   color: #fff;
+  background-color: #c60226;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px;
-  background-color: #ce291d;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: dc0027;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .menu ul li a:hover {
-  background-color: #af1d12;
+  background-color: #9d001d;
   transform: scale(1.1);
 }
 
-/* Style the Welcome Section */
-.welcome {
-  margin-top: 100px; /* Adjust the margin */
-  color: #333;
-  padding: 20px;
-  text-align: center;
- ;
+/* Image section styles */
+.home-image-section {
+  margin-top: 100px;
+  overflow-x: hidden;
 }
 
-.welcome h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+/* Welcome section styles */
+.home-welcome {
+  margin: 0;
+  margin-left: 100px;
+  margin-right: 100px; /* Adjust the margin */
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.home-welcome h1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 15px;
+  margin-bottom: 40px;
   transition: transform 0.3s ease;
 }
 
-.welcome h1:hover {
+.home-welcome h1:hover {
   transform: scale(1.1);
 }
-
+.home-beginning {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-left: 100px;
+  margin-right: 100px; /* Adjust the margin */
+  padding: 10px;
+  color: #333;
+  text-align: left;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-size: 26px;
+}
 /* Style the Project Info Section */
-.project-info {
-  margin-top: 20px; /* Adjust the margin */
+.home-first-aid-info {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px; /* Adjust the margin */
   background-color: #f9f9f9;
   color: #333;
   padding: 20px;
   text-align: center;
-  
+  border-radius: 10px;
 }
 
-.project-info h2 {
-  font-size: 28px;
+.home-first-aid-info h2 {
+  font-size: 32px;
   margin-bottom: 10px;
   color: #333;
 }
 
-.project-info p {
-  font-size: 20px;
+.home-first-aid-info p {
+  font-size: 24px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 /* Style the Learn First Aid Section */
-.additional-content {
-  margin-top: 20px; /* Adjust the margin */
+.home-information-and-recommendation {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px; /* Adjust the margin */
   background-color: #f9f9f9;
   color: #333;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
-.additional-content h2 {
-  font-size: 28px;
+.home-information-and-recommendation h2 {
+  font-size: 32px;
   margin-bottom: 10px;
   color: #333;
 }
 
-.additional-content p {
-  font-size: 20px;
+.home-information-and-recommendation p {
+  font-size: 24px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 /* Style the Join Community Section */
-.more-content {
-  margin-top: 20px; /* Adjust the margin */
+.home-importance-of-learning {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px; /* Adjust the margin */
   background-color: #f9f9f9;
   color: #333;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
-.more-content h2 {
-  font-size: 28px;
+.home-importance-of-learning h2 {
+  font-size: 32px;
   margin-bottom: 10px;
   color: #333;
 }
 
-.more-content p {
-  font-size: 20px;
+.home-importance-of-learning p {
+  font-size: 24px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
+.lecture-start {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.lecture-start h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.lecture-start p {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.25;
+}
+
+.algorithm-start {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.algorithm-start h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.algorithm-start p {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.25;
+}
+
+.resources-start {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.resources-start h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resources-start p {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.25;
+}
+
+.about-us-start {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px; /* Adjust the margin */
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-us-start h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-us-start p {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.25;
+}
+
+.bottom-info {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  line-height: 0.5;
+}

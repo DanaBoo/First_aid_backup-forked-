@@ -6,69 +6,134 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="home-page">
-      {/* Header Section */}
+      {/* Секція заголовка */}
       <div className="header">
         <div className="logo">
-          <img src='logo.png' alt="Website Logo" />
-          <h2>Preserve Life</h2>
+          <img src="logo.png" alt="Website Logo" />
+          <h2>Вбережи Життя</h2>
         </div>
         <div className="menu">
           <ul>
-            <li> <Link to="/">Home</Link> </li>
-            <li> <Link to="/lecture">Lecture</Link> </li>
-            <li> <Link to="/algorithm">Algorithm</Link> </li>
-            <li> <Link to="/resources">Resources</Link> </li>
-            <li> <Link to="/contact">About Us</Link> </li>
+            <li>
+              <Link to="/">Головна</Link>
+            </li>
+            <li>
+              <Link to="/lecture">Порядок ДМД</Link>{" "}
+            </li>
+            <li>
+              <Link to="/algorithm">Алгоритм</Link>{" "}
+            </li>
+            <li>
+              <Link to="/resources">Ресурси</Link>
+            </li>
+            <li>
+              <Link to="/contact">Про нас</Link>{" "}
+            </li>
           </ul>
         </div>
       </div>
 
-      {/* Welcome Section */}
-      <motion.div
-        className="welcome"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h1>Welcome to our website for learning first aid!</h1>
-        <p>
-          Here, you will find information and tools for studying first aid in
-          emergency situations.
-        </p>
-      </motion.div>
-
-      {/* Project Info Section */}
-      <motion.div
-        className="project-info"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h2>About the Project</h2>
-        <p>
-          This project aims to provide essential knowledge about first aid,
-          helping you be prepared to assist in emergencies. We offer lectures,
-          interactive algorithms, and valuable resources to empower you with
-          life-saving skills.
-        </p>
-      </motion.div>
-
-      {/* Additional Content Section */}
-      <div className="additional-content">
-        <h2>Learn First Aid Online</h2>
-        <p>
-          Our online platform provides a wide range of resources to help you
-          learn first aid. From video lectures to interactive quizzes, we`ve got
-          you covered.
-        </p>
+      <div className="home-image-section">
+        <img src="background2.png" alt="Background" />
       </div>
 
-      {/* More Content Section */}
-      <div className="more-content">
-        <h2>Join Our Community</h2>
+      {/* Секція привітання */}
+      <motion.div
+        className="home-welcome"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h1>
+          <p>Ласкаво просимо на веб-платформу </p>
+          &quot;Вбережи життя&quot;!
+        </h1>
+      </motion.div>
+
+      {/* Вступ */}
+      <motion.div
+        className="home-beginning"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <p>
-          Connect with like-minded individuals who are passionate about first
-          aid. Share your experiences and knowledge to make a difference.
+          <ul>
+            <li>Трапилася біда, життя людини в небезпеці.</li>
+            <li>Хто їй допоможе? Тільки той, хто виявиться поруч.</li>
+            <li>За допомогою чого? Використовуючи підручні засоби.</li>
+            <li>
+              Скільки часу відводиться на порятунок постраждалого? 5-7 хвилин.
+            </li>
+            <li>
+              Із чим може стикнутися рятувальник? Вражаючим фактором, кров’ю,
+              брудом.
+            </li>
+            <li>Як повинен діяти рятувальник?</li>
+          </ul>
+        </p>
+      </motion.div>
+
+      {/* Секція інформації про проект */}
+      <motion.div
+        className="home-first-aid-info"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h2>Значення знань першої медичної допомоги</h2>
+        <p>
+          Скільки життів можна врятувати, знаючи правила та послідовність
+          домедичної допомоги! Цією людиною можете бути Ви! Наша місія полягає у
+          тому, щоб, враховуючи всі обставини, Ви обрали найбільш оптимальний
+          шлях порятунку потерпілого. Надаючи допомогу, ми не можемо
+          користуватися однією схемою, бо ситуації бувають різні. Мова йде про
+          здоров&apos;я, а тут найдрібніша помилка обходиться занадто дорого.
+        </p>
+      </motion.div>
+
+      {/* Додатковий вміст */}
+      <motion.div
+        className="home-information-and-recommendation"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h2>Інформація та рекомендації</h2>
+        <p>
+          На цьому сайті ви знайдете вичерпну інформацію, корисні поради та
+          практичні рекомендації, які допоможуть вам в надзвичайних обставинах.
+          Можуть бути ситуації, коли потрібно мобілізувати волю. Та може
+          трапитися так, що саме від Вашої допомоги залежатиме здоров’я, а то й
+          життя людини. І Ви не повинні розгубитись. Треба бути готовим
+          кваліфіковано і швидко допомогти потерпілому до приїзду бригади
+          екстреної медичної допомоги.
+        </p>
+      </motion.div>
+
+      {/* Ще один вміст*/}
+      <motion.div
+        className="home-importance-of-learning"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h2>Важливість навчання</h2>
+        <p>
+          Домедичну допомогу нерідко доводиться надавати за складних і
+          несприятливих обставин. Отож опрацьовуємо матеріал серйозно та
+          відповідально. І нехай здобуті знання ніколи не стануть необхідними
+          навичками в житті! А якщо все таки настане необхідність скористатися
+          ними, то проявіть міцність характеру та силу волі у врятуванні життя
+          людини.
+        </p>
+      </motion.div>
+
+      <div className="bottom-info">
+        <p>&copy; {new Date().getFullYear()} Вбережи Життя || Preserve Life</p>
+        <p>Created by: Dana_boo (Maliarchuk Bohdana) and Tsymbaliuk Tetiana</p>
+        <p>
+          <Link to="/">Головна</Link> | <Link to="/contact">Про Нас</Link>
         </p>
       </div>
     </div>
