@@ -11,5 +11,5 @@ root.render(
       {/* Render the entire App component, which contains the Router and Routes */}
       <App />
     </React.StrictMode>
-  </>
+  </>,
 );

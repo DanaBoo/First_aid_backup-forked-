@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-//import AlgorithmChart from "./AlgorithmChart"; // Import the AlgorithmChart component
+import AlgorithmChart from "./AlgorithmChart";
 
 function AlgorithmPage() {
   return (
@@ -34,7 +34,6 @@ function AlgorithmPage() {
         </div>
       </div>
 
-      {/* Welcome Section */}
       <motion.div
         className="algorithm-start"
         initial={{ opacity: 0, y: 20 }}
@@ -46,6 +45,15 @@ function AlgorithmPage() {
           Here, you will find information and tools for studying first aid in
           emergency situations.
         </p>
+      </motion.div>
+
+      <motion.div
+        className="algorithm-chart"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <AlgorithmChart />
       </motion.div>
 
       <div className="bottom-info">
