@@ -40,7 +40,7 @@ function LecturePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <p style={{ textAlign: "left", fontSize: "14px" }}>
+        <p style={{ textAlign: "end", fontSize: "14px" }}>
           <b>
             ЗАТВЕРДЖЕНО
             <br /> Наказ Міністерства

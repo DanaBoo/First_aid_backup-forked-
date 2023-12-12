@@ -68,22 +68,6 @@ function AlgorithmPage() {
         <AlgorithmChart /> {/* Відображення діаграми */}
       </motion.div>
 
-      {/* <motion.div
-        className="algorithm-node-start-end"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <p>Виявлення постраждалого</p>
-      </motion.div>
-
-      <div className="algorithm-node-input-output">
-        <p>
-          Постраждалий з <br />
-          термічним опіком
-        </p>
-      </div>
-  */}
       <div className="bottom-info">
         {/* Нижня інформаційна секція */}
         <p>&copy; {new Date().getFullYear()} Вбережи Життя || Preserve Life</p>
