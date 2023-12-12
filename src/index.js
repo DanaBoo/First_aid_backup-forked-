@@ -1,6 +1,6 @@
 // Імпорт бібліотек та компонента
 import React from "react";
-import { createRoot } from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 
 // Отримання DOM-елементу з ідентифікатором "root"
