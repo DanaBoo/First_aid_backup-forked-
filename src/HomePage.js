@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="home-page">
-      {/* Секція заголовка */}
       <div className="header">
         <div className="logo">
           <img src="logo.png" alt="Website Logo" />
@@ -37,7 +36,6 @@ function HomePage() {
         <img src="background2.png" alt="Background" />
       </div>
 
-      {/* Секція привітання */}
       <motion.div
         className="home-welcome"
         initial={{ opacity: 0, y: 20 }}
@@ -50,7 +48,6 @@ function HomePage() {
         </h1>
       </motion.div>
 
-      {/* Вступ */}
       <motion.div
         className="home-beginning"
         initial={{ opacity: 0, y: 20 }}
@@ -74,7 +71,6 @@ function HomePage() {
         </p>
       </motion.div>
 
-      {/* Секція інформації про проект */}
       <motion.div
         className="home-first-aid-info"
         initial={{ opacity: 0, y: 20 }}
@@ -92,7 +88,6 @@ function HomePage() {
         </p>
       </motion.div>
 
-      {/* Додатковий вміст */}
       <motion.div
         className="home-information-and-recommendation"
         initial={{ opacity: 0, y: 20 }}
@@ -111,7 +106,6 @@ function HomePage() {
         </p>
       </motion.div>
 
-      {/* Ще один вміст*/}
       <motion.div
         className="home-importance-of-learning"
         initial={{ opacity: 0, y: 20 }}

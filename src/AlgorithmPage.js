@@ -3,7 +3,6 @@ import "./HomePage.css"; // Підключення стилів сторінки
 import { motion } from "framer-motion"; // Імпорт бібліотек
 import { Link } from "react-router-dom"; // Імпорт бібліотек
 import AlgorithmChart from "./AlgorithmChart"; // Імпорт компоненти для відображення діаграми
-//import OverviewFlow from "./AlgorithmChart";
 
 function AlgorithmPage() {
   return (
@@ -66,7 +65,6 @@ function AlgorithmPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        {/*<OverviewFlow /> */}
         <AlgorithmChart /> {/* Відображення діаграми */}
       </motion.div>
 

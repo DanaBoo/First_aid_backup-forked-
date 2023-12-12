@@ -6,6 +6,7 @@ import AlgorithmPage from "./AlgorithmPage"; // Імпорт компонент�
 import ResourcesPage from "./ResourcesPage"; // Імпорт компоненти сторінки ресурсів
 import ContactPage from "./ContactPage"; // Імпорт компоненти сторінки контактів
 
+// Функція App - головний компонент програми
 function App() {
   return (
     <Router>

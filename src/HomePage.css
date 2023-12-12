@@ -260,11 +260,15 @@ body {
   margin-top: 10px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 15px; /* Adjust the margin */
+  margin-bottom: 15px; /*Adjust the margin */
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
 }
+
+{/*.algorithm-chart {
+  background-color: #f9f9f9;
+}*/}
 
 .algorithm-node-start-end {
   background: #e3002b;
