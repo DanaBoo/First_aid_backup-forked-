@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="home-page">
-      {/* Секція заголовка */}
       <div className="header">
         <div className="logo">
           <img src="logo.png" alt="Website Logo" />
@@ -37,7 +36,6 @@ function HomePage() {
         <img src="background2.png" alt="Background" />
       </div>
 
-      {/* Секція привітання */}
       <motion.div
         className="home-welcome"
         initial={{ opacity: 0, y: 20 }}
@@ -50,31 +48,27 @@ function HomePage() {
         </h1>
       </motion.div>
 
-      {/* Вступ */}
       <motion.div
         className="home-beginning"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <p>
-          <ul>
-            <li>Трапилася біда, життя людини в небезпеці.</li>
-            <li>Хто їй допоможе? Тільки той, хто виявиться поруч.</li>
-            <li>За допомогою чого? Використовуючи підручні засоби.</li>
-            <li>
-              Скільки часу відводиться на порятунок постраждалого? 5-7 хвилин.
-            </li>
-            <li>
-              Із чим може стикнутися рятувальник? Вражаючим фактором, кров’ю,
-              брудом.
-            </li>
-            <li>Як повинен діяти рятувальник?</li>
-          </ul>
-        </p>
+        <ul>
+          <li>Трапилася біда, життя людини в небезпеці.</li>
+          <li>Хто їй допоможе? Тільки той, хто виявиться поруч.</li>
+          <li>За допомогою чого? Використовуючи підручні засоби.</li>
+          <li>
+            Скільки часу відводиться на порятунок постраждалого? 5-7 хвилин.
+          </li>
+          <li>
+            Із чим може стикнутися рятувальник? Вражаючим фактором, кров’ю,
+            брудом.
+          </li>
+          <li>Як повинен діяти рятувальник?</li>
+        </ul>
       </motion.div>
 
-      {/* Секція інформації про проект */}
       <motion.div
         className="home-first-aid-info"
         initial={{ opacity: 0, y: 20 }}
@@ -92,7 +86,6 @@ function HomePage() {
         </p>
       </motion.div>
 
-      {/* Додатковий вміст */}
       <motion.div
         className="home-information-and-recommendation"
         initial={{ opacity: 0, y: 20 }}
@@ -111,7 +104,6 @@ function HomePage() {
         </p>
       </motion.div>
 
-      {/* Ще один вміст*/}
       <motion.div
         className="home-importance-of-learning"
         initial={{ opacity: 0, y: 20 }}

@@ -236,7 +236,7 @@ body {
   margin-top: 120px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 50px; /* Adjust the margin */
+  margin-bottom: 20px; /* Adjust the margin */
   background-color: #f9f9f9;
   color: #333;
   padding: 20px;
@@ -254,6 +254,49 @@ body {
   font-size: 24px;
   color: #555;
   line-height: 1.25;
+}
+
+.algorithm-chart {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 15px; /*Adjust the margin */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+{/*.algorithm-chart {
+  background-color: #f9f9f9;
+}*/}
+
+.algorithm-node-start-end {
+  background: #e3002b;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 5px 0; /* Top and bottom padding */
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  width: calc(100% - 1600px); /* Total width - left and right padding */
+  margin-left: 800px; /* Left padding */
+  margin-right: 800px; /* Right padding */
+}
+.algorithm-node-input-output {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 5px 0; /* Top and bottom padding */
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  width: calc(100% - 1600px); /* Total width - left and right padding */
+  margin-left: 800px; /* Left padding */
+  margin-right: 800px; /* Right padding */
 }
 
 .resources-start {
