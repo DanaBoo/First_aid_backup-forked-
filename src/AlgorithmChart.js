@@ -166,6 +166,10 @@ const initialEdges = [
     markerEnd: {
       type: MarkerType.ArrowClosed,
     },
+    label: "Так",
+    labelStyle: {
+      fontSize: "20px",
+    },
   },
   {
     id: "e4-5",
@@ -229,6 +233,10 @@ const initialEdges = [
     markerEnd: {
       type: MarkerType.ArrowClosed,
     },
+    label: "Так",
+    labelStyle: {
+      fontSize: "20px",
+    },
   },
   {
     id: "e11-14",
@@ -246,6 +254,10 @@ const initialEdges = [
     type: "smoothstep",
     markerEnd: {
       type: MarkerType.ArrowClosed,
+    },
+    label: "Ні",
+    labelStyle: {
+      fontSize: "20px",
     },
   },
   {
@@ -274,6 +286,10 @@ const initialEdges = [
     markerEnd: {
       type: MarkerType.ArrowClosed,
     },
+    label: "Ні",
+    labelStyle: {
+      fontSize: "20px",
+    },
   },
   {
     id: "e15-16",
@@ -282,6 +298,10 @@ const initialEdges = [
     type: "smoothstep",
     markerEnd: {
       type: MarkerType.ArrowClosed,
+    },
+    label: "Так",
+    labelStyle: {
+      fontSize: "20px",
     },
   },
   {
@@ -300,6 +320,10 @@ const initialEdges = [
     type: "smoothstep",
     markerEnd: {
       type: MarkerType.ArrowClosed,
+    },
+    label: "Ні",
+    labelStyle: {
+      fontSize: "20px",
     },
   },
   {
@@ -327,11 +351,7 @@ const AlgorithmChart = () => {
     // Контейнер для ReactFlow компоненту
     <div style={{ height: "900px", width: "100%", margin: "0 auto" }}>
       {/* ReactFlow компонент */}
-      <ReactFlow
-        nodes={initialNodes}
-        edges={initialEdges}
-        //onEdgeClick={}
-      >
+      <ReactFlow nodes={initialNodes} edges={initialEdges}>
         {/* Додаткові елементи для ReactFlow: Background, Controls, MiniMap */}
         <Background />
         <Controls />
